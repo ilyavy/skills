@@ -19,7 +19,7 @@ levels:
       
     Parallel Programming:
       - Future
-      - Fork/Join framework
+      - Fork/Join framework (RecursiveTask, RecursiveAction)
       - Parallel streams
       - Barrier & Phaser
       - Pipelines
