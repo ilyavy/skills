@@ -28,7 +28,7 @@ levels:
       
       - Amdahl's Law
       - Critical Path in Computational Graph - how much faster the program can be due to parallelization?
-      
+      - Parallelism is effective until the number of threads exceeds the number of cores available.
       
       Algorithms:
         - Jacoby's -> iteratively converge... (https://www.coursera.org/learn/parallel-programming-in-java/lecture/vAOKr/3-4-parallel-one-dimensional-iterative-averaging)
