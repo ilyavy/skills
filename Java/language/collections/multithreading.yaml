@@ -1,0 +1,41 @@
+id: 
+name: Multithreading
+description: 
+icon: 
+parent: java
+
+levels:
+  - number: 1
+    prerequisites:
+      - CS -> threads
+      - CS -> parallelism & concurrency
+      - CS -> dynamic programming
+    requires:
+      - Thread, Runnable, Callable
+      - synchronized
+      - locks
+        questions:
+          - When to use lock and when synchronized?
+            answer: Synchronized - thread is always locked waiting, locks give more flexibility. Using locks has some other hazards as well, such as deadlock (which can happen when multiple locks are acquired in an inconsistent order). Even in the absence of hazards like this, locks are simply a relatively coarse-grained coordination mechanism, and as such, are fairly "heavyweight" for managing a simple operation such as incrementing a counter or updating who owns a mutex.
+      - volatile
+        questions:
+          - Why don’t we just mark all variables as volatile?
+            answer: Because shipping cache lines across cores is a very costly operation! Doing so would implicitly stall the cores involved from doing additional work, and result in bottlenecks on the cache coherence protocol (the protocol CPUs use to transfer cache lines between main memory and other CPUs). The result is magnitudes of slowdown.
+      - atomics
+        questions:
+          - Which way to implement an atomic counter is faster - with AtomicInteger or with synchronized block?
+            answer: https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
+      - Future
+      - Fork/Join framework
+      - Parallel streams
+      - Barrier & Phaser
+      - JMM (java memory model)
+      - classic producer/consumer problem - reproduce and fix in java
+      
+      
+    Parallel Programming:
+      - Future
+      - Fork/Join framework (RecursiveTask, RecursiveAction)
+      - Parallel streams
+      - Barrier & Phaser
+      - Pipelines

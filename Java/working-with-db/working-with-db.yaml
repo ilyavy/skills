@@ -1,0 +1,13 @@
+id:
+name: Working with relational databases
+description:
+icon:
+
+levels:
+  - number: 1
+    prerequisites:
+      - SQL
+      - CS -> RDBMS
+    requires:
+      - jdbc
+      - jpa
