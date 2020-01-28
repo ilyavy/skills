@@ -1,4 +1,5 @@
-
+Questions:
+Can operations described in a pipeline be reordered?
 
 
 
@@ -30,3 +31,11 @@ longer be used.
 Composing collectors is a powerful approach, but it can also lead to very convoluted expressions. Their best use is with groupingBy or partitioningBy to process the
 “downstream” map values. Otherwise, simply apply methods such as map, reduce, 
 count, max, or min directly on streams.
+
+
+
+https://developer.ibm.com/articles/j-java-streams-3-brian-goetz
+
+
+
+
