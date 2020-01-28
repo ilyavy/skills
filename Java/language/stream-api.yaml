@@ -1,0 +1,32 @@
+
+
+
+
+A stream seems superfcially similar to a collection, allowing you to transform 
+and retrieve data. But there are signifcant differences: 
+1. A stream does not store its elements. They may be stored in an underlying 
+collection or generated on demand. 
+2. Stream operations don’t mutate their source. For example, the filter method 
+does not remove elements from a new stream, but it yields a new stream in 
+which they are not present. 
+3. Stream operations are lazy when possible. This means they are not executed 
+until their result is needed. For example, if you only ask for the frst fve long 
+words instead of all, the filter method will stop fltering after the ffth match. 
+As a consequence, you can even have infnite streams!
+
+
+
+This workﬂow is typical when you work with streams. You set up a pipeline of 
+operations in three stages: 
+1. Create a stream. 
+2. Specify intermediate operations for transforming the initial stream into others, 
+possibly in multiple steps. 
+3. Apply a terminal operation to produce a result. This operation forces the execution of the lazy operations that precede it. Afterwards, the stream can no 
+longer be used.
+
+
+
+
+Composing collectors is a powerful approach, but it can also lead to very convoluted expressions. Their best use is with groupingBy or partitioningBy to process the
+“downstream” map values. Otherwise, simply apply methods such as map, reduce, 
+count, max, or min directly on streams.
