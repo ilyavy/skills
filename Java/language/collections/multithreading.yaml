@@ -42,4 +42,4 @@ levels:
       
       
       
-      About concurrency and parallelism: https://developer.ibm.com/articles/j-java-streams-4-brian-goetz/
+      About concurrency and parallelism, when to go parallel: https://developer.ibm.com/articles/j-java-streams-4-brian-goetz/
