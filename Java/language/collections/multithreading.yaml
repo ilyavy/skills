@@ -39,3 +39,7 @@ levels:
       - Parallel streams
       - Barrier & Phaser
       - Pipelines
+      
+      
+      
+      About concurrency and parallelism: https://developer.ibm.com/articles/j-java-streams-4-brian-goetz/
