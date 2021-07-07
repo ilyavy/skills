@@ -1,0 +1,23 @@
+id:
+name: Computer Science
+description:
+icon:
+
+children:
+  - covariance and contravariance
+  - object-oriented programming
+  - functional programming
+  - operating systems
+  - compare and swap
+  - networks:
+      - osi
+      - tcp
+      - http
+
+
+
+
+
+    What is the difference between parallelism and concurrency?
+    answer: https://www.youtube.com/watch?v=FChZP09Ba4E
+

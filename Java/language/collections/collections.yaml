@@ -1,0 +1,27 @@
+id:
+name: Collections Framework
+description:
+icon:
+
+levels:
+  - number: 1
+    prerequisites:
+      - CS -> Data Structures
+    requires:
+      - list
+        questions:
+          - ArrayList
+          - LinkedList
+      - set
+        questions:
+          - HashSet
+          - TreeSet
+      - queue
+      - collection
+        questions:
+          - From which interface it inherits?
+            answer: Iterable
+      - map
+        questions:
+          - HashMap
+          - TreeMap

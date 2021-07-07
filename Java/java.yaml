@@ -1,0 +1,30 @@
+name: Java
+description:
+icon:
+
+children:
+  - language:
+      - collections:
+          - multhithreading:
+              - akka
+      - stream api
+  - jvm:
+      - jit
+      - gc
+      - profiling
+  - tools:
+      - maven
+      - gradle
+  - reactive:
+      - basics
+  - working with rdb:
+      - jdbc
+      - Hibernate
+      - jpa
+  - spring:
+      - application context
+      - spring jpa:
+        - transactional
+      - spring boot
+      - IoC
+      - jax-rs

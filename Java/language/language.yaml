@@ -1,0 +1,41 @@
+id:
+name: Language Specifics
+description:
+icon:
+
+levels:
+  - number: 1
+    prerequisites:
+      - CS -> OOP
+    requires:
+      - primitives and classes
+        link: https://dzone.com/articles/never-use-float-and-double-for-monetary-calculatio
+        questions:
+          - Can you use float or double for monitary operations?
+          - Contents of an object.
+          - Methods available in Object class.
+          - The order of object's initialization.
+          - Primitives' sizes.
+      - closeable and autoClosable
+      - serializable
+      - try-catch-finally
+        questions:
+          - In case with try with AutoCloseable, if code in try block will throw an exception, and close will throw an exception, which one will be catched?
+      - overloading
+      - overriding
+        questions:
+          - Can overriding method change exceptions thrown by base method?
+            answer: It can delete existing, cannot add new, can make it more concrete, cannot make it more general (e.g. change from SocketException to IOException). With RuntimeExceptions can do anything.
+      - abstract classes
+      - interfaces
+      - exceptions hierarchy
+      - annotations
+      - generics
+        link: https://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html
+        questions:
+          - How to write and call generic static method?
+      - java.io
+      - Socket
+
+
+
